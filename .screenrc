@@ -1,0 +1,12 @@
+term screen-256color
+hardstatus alwayslastline "%{= KG}%-Lw%{= Kr}%n-%f %t%{-}%+Lw%=%{= RY}%M/%d %D"
+# hardstatus alwayslastline "%{= KG}%-Lw%{= Kr}%n-%f %t%{-}%+Lw%=%{= RY}%M/%d %D%C %a"
+startup_message off
+msgwait 1
+vbell  off
+bindkey -k k7 detach
+bindkey -k k8 kill
+bindkey -k k9 screen
+bindkey -k k; title
+bindkey -k F1 prev
+bindkey -k F2 next
