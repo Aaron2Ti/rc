@@ -1,9 +1,15 @@
 alias df='df -h'
 alias grep='grep --color=auto'
 alias ls='ls -X --color=auto'
+alias ll='ls -X -l --color=auto'
 alias v='vim'
 alias vm='mv'
+alias sl='ls'
 alias su='sudo su'
+
+JAVA=/opt/jdk1.6.0_10/bin
+RUBY=/opt/ruby187/bin
+export PATH=$RUBY:$JAVA:$PATH
 
 autoload -U compinit colors
 colors

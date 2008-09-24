@@ -1,21 +1,9 @@
 ﻿autocmd!
 autocmd BufNewFile,BufRead *.txt set filetype=human
-autocmd BufNewFile,BufRead *.haml set filetype=haml
-autocmd BufNewFile,BufRead *.sass set filetype=sass
-autocmd BufNewFile,BufRead *.ejs set filetype=javascript
-"autocmd BufNewFile,BufRead *.* hi CursorLine term=none 
 
 filetype on
 
-" * Keystrokes -- Moving Around
-" have the h and l cursor keys wrap between lines
-" (LIKE <sPACE> AND <bKsPC> DO BY DEFAULT), 
-" AND ~ COVERT CASE OVER LINE BREAKS; ALSO HAVE the cursor keys
-" wrap in insert mode:
-set whichwrap=h,l,~,[,]
-
-" [<Space> by default is like l, <BkSpc> like h, and - like k.]
-noremap <BS> <PageUp>
+" [<Space> by default is like l, and - like k.]
 noremap - <PageUp>
 noremap <Space> <PageDown>
 
@@ -24,7 +12,6 @@ noremap <S-c> :call EnhancedCommentify('', 'comment')<CR>
 noremap <S-d> :call EnhancedCommentify('', 'decomment')<CR>
 
 " scroll the window by a couple of lines up/down with <Ins>/<Del> 
-" (like in `Lynx'):
 " [<Ins> by default is like i, and <Del> like x.]
 noremap <Ins> 4<C-Y>
 noremap <Del> 4<C-E>
@@ -41,20 +28,12 @@ nnoremap <S-F6> <C-W>W
 nnoremap <F7> <C-W>100>
 nnoremap <F8> :w !ruby<CR>
 
-" use <Ctrl>+N/<Ctrl>+P to cycle through files:
-" [<Ctrl>+N by default is like j, and <Ctrl>+P like k.]
-nnoremap <C-N> :next<CR>
-nnoremap <C-P> :prev<CR>
-
 " have % bounce between angled brackets, as well as t'other kinds:
 set matchpairs+=<:>
 
 " move current line up or down
 nnoremap <C-j> ddp
 nnoremap <C-k> ddkP
-
-" * Keystrokes -- Insert Mode
-set backspace=indent,eol,start
 
 noremap <C-e> :Explore<CR>
 
@@ -67,6 +46,9 @@ command Rroute Redit config/routes.rb
 set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=cp936
+
+" * Keystrokes -- Insert Mode
+set backspace=indent,eol,start
 
 set autoindent
 set autoread
@@ -104,6 +86,3 @@ colorscheme sexy
 filetype plugin indent on
 syntax on
 set smartcase
-"set foldmethod=indent
-"set foldopen=all
-"set foldclose=all
