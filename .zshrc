@@ -4,22 +4,27 @@ alias ls='ls -X --color=auto'
 alias ll='ls -X -l --color=auto'
 alias v='vim'
 alias vm='mv'
+alias p='pwd'
 alias sl='ls'
 alias su='sudo su'
+alias m='mongrel_rails'
 
 JAVA=/opt/jdk1.6.0_10/bin
 RUBY=/opt/ruby187/bin
 export PATH=$RUBY:$JAVA:$PATH
 
-autoload -U compinit colors
+autoload -U promptinit compinit colors
 colors
+promptinit
 compinit
+
+export PS1="$prompt_newline%B%~%b$prompt_newline%#"
 
 export HISTFILE=~/.bash_history
 export HISTSIZE=5000
 export SAVEHIST=5000
 
-# setopt autopushd pushdminus pushdsilent pushdtohome
+setopt autopushd pushdminus pushdsilent pushdtohome
 # setopt autocd
 # setopt cdablevars
 # setopt globdots
