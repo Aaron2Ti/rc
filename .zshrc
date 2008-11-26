@@ -1,7 +1,7 @@
 alias df='df -h'
 alias grep='grep --color=auto'
 alias ls='ls -X --color=auto'
-alias ll='ls -X -l --color=auto'
+alias ll='ls -X -l -h --color=auto'
 alias v='vim'
 alias vm='mv'
 alias p='pwd'
@@ -9,14 +9,26 @@ alias sl='ls'
 alias su='sudo su'
 alias m='mongrel_rails'
 
+alias g='git'
+alias gb='git branch'
+alias gc='git commit'
+alias gs='git status'
+
 JAVA=/opt/jdk1.6.0_10/bin
+GEM=/home/aaron/.gem/ruby/1.8/bin
 RUBY=/opt/ruby187/bin
-export PATH=$RUBY:$JAVA:$PATH
+ERLANG=/opt/erlang_r12b/bin
+R=/opt/R_280/bin
+IMAGEMAGICK=/opt/imagemagick_646/bin
+
+export PATH=$GEM:$RUBY:$ERLANG:$R:$JAVA:$PATH
+export R_HOME=/opt/R_280/lib/R
 
 autoload -U promptinit compinit colors
 colors
 promptinit
 compinit
+
 
 export PS1="$prompt_newline%B%~%b$prompt_newline%#"
 
