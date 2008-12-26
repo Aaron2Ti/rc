@@ -2,12 +2,16 @@ alias df='df -h'
 alias grep='grep --color=auto'
 alias ls='ls -X --color=auto'
 alias ll='ls -X -l -h --color=auto'
+alias su='sudo env PATH=$PATH'
 alias v='vim'
 alias vm='mv'
 alias p='pwd'
 alias sl='ls'
-alias su='sudo su'
+alias su='sudo env PATH=$PATH'
 alias m='mongrel_rails'
+alias mr='mongrel_rails restart'
+alias td='tail -f log/development.log'
+alias sc='./script/console'
 
 alias g='git'
 alias gb='git branch'
@@ -21,7 +25,7 @@ ERLANG=/opt/erlang_r12b/bin
 R=/opt/R_280/bin
 IMAGEMAGICK=/opt/imagemagick_646/bin
 
-export PATH=$GEM:$RUBY:$ERLANG:$R:$JAVA:$PATH
+export PATH=$GEM:$RUBY:$ERLANG:$R:$JAVA:$IMAGEMAGICK:$PATH
 export R_HOME=/opt/R_280/lib/R
 
 autoload -U promptinit compinit colors

@@ -19,9 +19,9 @@ nnoremap ' `
 nnoremap ` '
 
 " [<Space> by default is like l, <BkSpc> like h, and - like k.]
-noremap <BS> <PageUp>
-noremap - <PageUp>
-noremap <Space> <PageDown>
+noremap <BS> <C-u>
+noremap - <C-u>
+noremap <Space> <C-d>
 
 " EnhancedCommentify
 noremap <S-c> :call EnhancedCommentify('', 'comment')<CR>
@@ -88,7 +88,7 @@ command Rroute Redit config/routes.rb
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
-set termencoding=cp936
+set termencoding=utf-8
 
 set autoindent
 set autoread
