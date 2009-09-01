@@ -26,7 +26,6 @@ alias g='git'
 alias gb='git branch'
 alias gc='git commit'
 alias gs='git status'
-alias proxy='ssh -ND 9999 aaron@lecool.com'
 ######################################################################################
 
 # Rubygems ??? should be unset when setup a new ruby environment
