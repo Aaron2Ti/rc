@@ -95,12 +95,11 @@ set shiftround shortmess=atI virtualedit=all
 set wildmenu wildmode=list:longest,full
 
 set visualbell t_vb=
+set guioptions=egmrLt
+set guifont=Monaco:h16 guifontwide=Kai:h16
 
 syntax on
 
 if has('gui')
   set fuoptions=maxvert,maxhorz
-  set guioptions=egmrLtc
-  set guifont=Monaco:h16 guifontwide=Kai:h16
-  set guioptions-=T
 end

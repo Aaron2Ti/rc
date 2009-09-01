@@ -1,0 +1,53 @@
+snippet link
+	= link_to '${1:Link}', ${2:'#'}${3}
+snippet a
+	= link_to '${1:Link}', ${2:'#'}${3}
+snippet ff form_for
+	- form_for @${1:object}${3} do |f|${2}${4}
+snippet ftf
+	= f.text_field :${1:field}${2}
+snippet fta
+	= f.text_area :${1:field}${2}
+snippet fp
+	= f.password_field  :${1:field}${2}
+snippet file
+	= f.file_field :${1:field}${2}
+snippet fh
+	= f.hidden_field :${1:field}${2}
+snippet fcb
+	= f.check_box :${1:field}${2}
+snippet fr
+	= f.radio_button :${1:field}, '${2: option}'${3}
+snippet fff fields_for
+	- fields_for ${1:object} do |${2:ff}|${3}
+snippet fl
+	= f.label :${1:field}, '${2:value}'${3}
+
+snippet flf
+	= f.label :${1:field}, '${2:value}'
+	= f.${4:text_field} :$1${3}${5}
+
+snippet flfe
+	= f.label :${1:field}, '${2:value}'
+	= f.${4:text_field} :$1
+	= f.error_message_on :$1${3}${5}
+
+snippet fe
+	= f.error_message_on :${1:field}${2}
+snippet error
+	= error_message_for :${1:field}${2}
+
+snippet img
+	= image_tag '${1:/#}'${2}
+snippet js
+	= javascript_include_tag '${1:/#}'${2}
+snippet css
+	= stylesheet_link_tag '${1:/#}'${2}
+
+snippet :
+	:${1:key} => ${2:'value'}
+
+snippet p
+	params[:${1}]${2}
+snippet f
+	flash[:${1:notice}]${2}

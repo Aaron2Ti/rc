@@ -1,1 +1,4 @@
-/Volumes/Data/Users/aaron/.autotest
+require 'autotest/fsevent'
+require 'autotest/growl'
+
+# vim: syntax=ruby

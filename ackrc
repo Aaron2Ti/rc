@@ -1,1 +1,19 @@
-/Volumes/Data/Users/aaron/.ackrc
+--smart-case
+--sort-files
+--color
+--pager=less -r
+#  ACK_COLOR_FILENAME
+#  Specifies the color of the filename when it’s printed in −−group
+#  mode.  By default, it’s "bold green".
+#
+#  The recognized attributes are clear, reset, dark, bold, underline,
+#  underscore, blink, reverse, concealed black, red, green, yellow,
+#  blue, magenta, on_black, on_red, on_green, on_yellow, on_blue,
+#  on_magenta, on_cyan, and on_white.  Case is not significant.
+#  Underline and underscore are equivalent, as are clear and reset.
+#  The color alone sets the foreground color, and on_color sets the
+#  background color.
+#
+#  ACK_COLOR_MATCH
+#  Specifies the color of the matching text when printed in −−color
+#  mode.  By default, it’s "black on_yellow".

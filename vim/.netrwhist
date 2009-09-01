@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/aaron/workspace/gettext_i18n_rails_example/app/views/cars'
+let g:netrw_dirhist_2='/Users/aaron/sample/app/views/articles'
+let g:netrw_dirhist_3='/Users/aaron/.gem/ruby/1.8/gems/gettext_rails-2.0.4/sample/app/views/articles'
+let g:netrw_dirhist_4='/Users/aaron/workspace/globalize2/globalize2/lib/globalize'
+let g:netrw_dirhist_5='/Users/aaron/workspace/typo-5.3/config'
+let g:netrw_dirhist_6='/Users/aaron/workspace/lecool/app/models'
